@@ -46,15 +46,12 @@ int main(){
     cout << endl;
 
 
-
-
-
-    cout<<"\n-------------------Question 3---------------"<<endl;
-    //declare dimension of 2D grid
+    cout<<"\n-------------------Question-3---------------"<<endl;
     const int DIMENSION =8;
     for(int row = 1; row<= DIMENSION+1; row++){
         for(int col = 1; col<= DIMENSION+1; col++){
-                if((col==3) && ((row<=4 && row>=5))||(col==4) && ((row<=3 && row>=6))||(col==5) && ((row<=5 && row>=7))||(col=6) && ((row<=3 && row>=6))||((row >=3 && row <=8))||(col==7) && ((row<=4 && row>=5))){
+            if(((col==3 || col==7))&&((row>=4 && row <=5)) || ((col==4 || col==6))&&((row>=3 && row <=6))|| (col==5)&& ((row>=5 && row <=7)))
+            {
                     cout<<" % ";
                 }
                 else
@@ -64,9 +61,6 @@ int main(){
     
     }
 
-
-
- 
     return 0;
 
 
